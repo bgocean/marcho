@@ -126,7 +126,7 @@ footer {
     border: none;
     padding: 12px 10px 12px 15px;
     box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
-    outline: none;
+    outline: none;  // added
     &::placeholder {
       color: $default;
       font-size: 16px;
@@ -647,6 +647,7 @@ footer {
     @extend %roboto-400;
     font-size: 22px;
     margin-bottom: 20px;
+    min-width: 290px;      // append
   }
   &__item-link {
     position: relative;
@@ -693,6 +694,7 @@ footer {
     margin-top: 4px;
     height: 60px;
     padding: 0 15px;
+    outline: none;  // added
   }
   &__btn{
     display: block;
@@ -710,6 +712,9 @@ footer {
     margin-top: 12px;
     color: $accent;
     display: inline-block;
+  }
+  &__text{
+    margin-bottom: 25px;
   }
 }
 
